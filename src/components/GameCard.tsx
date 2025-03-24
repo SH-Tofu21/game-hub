@@ -11,6 +11,12 @@ const GameCard = ({ game }: Props) => {
       <Image src={game.background_image}></Image>
       <CardBody>
         <Heading fontSize="2xl">{game.name}</Heading>
+
+        {/* {game.parent_platforms.map(({ platform }) => (
+          <Text>{platform.name}</Text>
+        ))}
+        ; */}
+
         <PlatformIconList
           platforms={game.parent_platforms.map((p) => p.platform)}
         />
