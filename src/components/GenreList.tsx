@@ -87,7 +87,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
             {/* <Text fontSize="lg">{genre.name}</Text> */}
             {/* <Button onClick={() => console.log(genre)} fontSize="lg">{genre.name}></Button> */}
             <Button
-              fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
+              fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"} // Highlight selected genre
               onClick={() => onSelectGenre(genre)}
               fontSize="lg"
               variant="link"
