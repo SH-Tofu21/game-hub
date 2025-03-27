@@ -60,6 +60,7 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
+
 import useGenres, { Genre } from "../hooks/useGenres";
 import getCroppedImageURL from "../services/image-url";
 
@@ -71,9 +72,9 @@ interface Props {
 const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
   const { data, isLoading, error } = useGenres();
 
-  if (isLoading) return <Spinner />;
+  // if (isLoading) return <Spinner />;
 
-  if (error) return null;
+  // if (error) return null;
 
   return (
     <>
