@@ -128,12 +128,12 @@ const GameGrid = ({ gameQuery }: Props) => {
         {isLoading &&
           skeletons.map((skeleton) => (
             <GameCardContainer key={skeleton}>
-              <GameCardSkeleton></GameCardSkeleton>
+              <GameCardSkeleton />
             </GameCardContainer>
           ))}
         {data.map((game) => (
           <GameCardContainer key={game.id}>
-            <GameCard game={game}></GameCard>
+            <GameCard game={game} />
           </GameCardContainer>
         ))}
       </SimpleGrid>
